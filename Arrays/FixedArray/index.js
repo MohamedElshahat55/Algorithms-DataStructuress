@@ -22,10 +22,8 @@ class FixedArray{
             length--;
         }
     }
-
     // Insert n into index i after shifting elements to the right.
     // Assuming i is a valid index and arr is not full.
-    /*عشان تحط الرقم الجديد لازم تحرك كل العناصر اللي بعد المكان اللي عايز تحط فيه الرقم الجديد خطوة لورا. علشان كده بيدور الكود من آخر الـ arr لحد قىبل المكان اللي عايز تحط فيه الرقم الجديد (i - 1). */
     insetMiddle(arr,length,n,i){
         for(let index = length -1 ; index > i ; index--){
             arr[index + 1] = arr[index]
